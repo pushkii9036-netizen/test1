@@ -3,69 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>इयत्ता ५ वी शिष्यवृत्ती सराव परीक्षा २०२६ (Test 2)</title>
+    <title>इयत्ता ५ वी शिष्यवृत्ती सराव परीक्षा २०२६ (Test 3)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans Devanagari', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f0fdf4; /* Light green tint background */
         }
         .option-radio:checked + label {
-            background-color: #dcfce7; /* green-100 */
-            border-color: #16a34a; /* green-600 */
-            color: #14532d; /* green-900 */
-            box-shadow: 0 0 0 1px #16a34a;
+            background-color: #dcfce7;
+            border-color: #16a34a;
+            color: #14532d;
+            box-shadow: 0 0 0 2px #16a34a;
+            transform: scale(1.01);
         }
-        .animate-slide-up {
-            animation: slideUp 0.4s ease-out;
+        .animate-pop {
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen pb-20">
 
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-20">
-        <div class="max-w-3xl mx-auto px-4 py-3 flex justify-between items-center">
+    <header class="bg-white shadow-lg sticky top-0 z-30 border-b-4 border-green-600">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
             <div>
-                <h1 class="text-xl font-bold text-green-700 leading-tight">शिष्यवृत्ती सराव परीक्षा - २०२६</h1>
-                <p class="text-xs text-gray-500">इयत्ता ५ वी (PUP) | Test 2 | सर्व विषय</p>
+                <h1 class="text-xl md:text-2xl font-extrabold text-green-800 leading-tight">शिष्यवृत्ती सराव परीक्षा - २०२६</h1>
+                <p class="text-xs md:text-sm text-green-600 font-semibold">इयत्ता ५ वी (PUP) | Test 3 | अंतिम सराव</p>
             </div>
-            <a href="https://www.youtube.com/@successdigitalclasses" target="_blank" class="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded-full text-sm font-semibold transition shadow-sm animate-pulse">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                Subscribe
+            <a href="https://www.youtube.com/@successdigitalclasses" target="_blank" class="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold transition shadow-md transform hover:scale-105">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Subscribe Now
             </a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-4 py-6">
+    <main class="max-w-3xl mx-auto px-4 py-8">
         
         <!-- Instructions -->
-        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 mb-6 rounded-r shadow-sm">
-            <h2 class="text-indigo-800 font-bold text-lg mb-1">महत्वाच्या सूचना:</h2>
-            <ul class="list-disc list-inside text-sm text-indigo-700 space-y-1">
-                <li>या परीक्षेत <strong>मराठी, गणित, इंग्रजी, व बुद्धिमत्ता</strong> या चारही विषयांचे प्रश्न आहेत.</li>
+        <div class="bg-white border-l-8 border-yellow-500 p-5 mb-8 rounded-lg shadow-md">
+            <h2 class="text-yellow-800 font-bold text-lg mb-2 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                सूचना (Instructions):
+            </h2>
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-2 font-medium">
+                <li>विषय: <strong>मराठी, गणित, इंग्रजी, बुद्धिमत्ता</strong>.</li>
                 <li>एकूण २० प्रश्न (४० गुण).</li>
-                <li>चाचणी सबमिट केल्यावर ३ सेकंदात निकाल व स्पष्टीकरण मिळेल.</li>
+                <li>चाचणी सबमिट केल्यानंतर <strong>३० सेकंद</strong> निकाल व स्पष्टीकरण दिसेल.</li>
+                <li>त्यानंतर आपोआप ॲपवर रिडायरेक्ट केले जाईल.</li>
             </ul>
         </div>
 
         <!-- Quiz Form -->
-        <form id="quizForm" class="space-y-6">
+        <form id="quizForm" class="space-y-8">
             <div id="questions-container" class="space-y-6">
                 <!-- Questions will be injected here by JS -->
             </div>
 
             <!-- Submit Button -->
-            <div class="pt-4 pb-10">
-                <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transform transition active:scale-95 text-lg flex items-center justify-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    चाचणी सबमिट करा (Submit Test)
+            <div class="pt-6 pb-12">
+                <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white font-extrabold py-4 px-6 rounded-xl shadow-xl transform transition active:scale-95 text-xl flex items-center justify-center gap-3 border-b-4 border-green-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    SUBMIT TEST 3
                 </button>
             </div>
         </form>
@@ -73,38 +78,45 @@
     </main>
 
     <!-- Result Modal -->
-    <div id="resultModal" class="fixed inset-0 bg-gray-900 bg-opacity-80 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden animate-slide-up flex flex-col max-h-[90vh]">
+    <div id="resultModal" class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-xl overflow-hidden animate-pop flex flex-col max-h-[90vh]">
             <!-- Modal Header -->
-            <div class="bg-green-600 p-5 text-center shrink-0">
-                <h2 class="text-2xl font-bold text-white">अभिनंदन! (Result)</h2>
-                <div class="mt-2 inline-block bg-green-700 bg-opacity-50 px-4 py-1 rounded-full">
-                    <span class="text-green-50 font-medium">गुण: </span>
-                    <span class="text-white font-bold text-xl ml-1"><span id="scoreDisplay">0</span> / <span id="totalMarksDisplay">40</span></span>
+            <div class="bg-gradient-to-r from-green-600 to-teal-600 p-6 text-center shrink-0 relative">
+                <h2 class="text-3xl font-extrabold text-white tracking-wide">निकाल (Result)</h2>
+                <div class="mt-3 inline-flex items-center justify-center bg-white bg-opacity-20 backdrop-blur-lg px-6 py-2 rounded-full border border-white border-opacity-30">
+                    <span class="text-green-50 font-medium mr-2">एकूण गुण:</span>
+                    <span class="text-white font-extrabold text-2xl"><span id="scoreDisplay">0</span> / 40</span>
                 </div>
             </div>
             
             <!-- Modal Body (Scrollable) -->
-            <div class="p-5 overflow-y-auto">
-                <!-- Subject-wise Breakdown -->
-                <div class="mb-5">
-                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-3">विषयनिहाय गुण (Subject Ranking)</h3>
-                    <div id="subjectBreakdown" class="grid grid-cols-2 gap-3">
-                        <!-- Injected by JS -->
+            <div class="p-6 overflow-y-auto bg-gray-50 flex-grow">
+                
+                <!-- Countdown Timer -->
+                <div class="bg-orange-100 border-l-4 border-orange-500 p-4 mb-6 rounded shadow-sm flex items-center justify-between">
+                    <div>
+                        <p class="text-orange-800 font-bold text-sm">तुम्ही ॲपवर रिडायरेक्ट व्हाल:</p>
+                        <p class="text-xs text-orange-600">Please review your answers.</p>
+                    </div>
+                    <div class="flex items-center bg-white px-3 py-1 rounded-lg border border-orange-200">
+                        <svg class="w-5 h-5 text-orange-500 mr-2 animate-spin" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span id="timer" class="text-2xl font-black text-orange-600 font-mono">30</span>
+                        <span class="text-xs text-orange-400 ml-1">s</span>
                     </div>
                 </div>
 
-                <!-- Timer -->
-                <div class="bg-orange-50 border border-orange-200 rounded-lg p-3 mb-5 text-center">
-                    <p class="text-sm text-orange-800 font-semibold">
-                        ॲपवर रिडायरेक्ट होत आहे... <span id="timer" class="text-2xl font-bold text-red-600 mx-1">3</span>
-                    </p>
+                <!-- Subject-wise Breakdown -->
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">विषयनिहाय कामगिरी (Ranking)</h3>
+                <div id="subjectBreakdown" class="grid grid-cols-2 gap-4 mb-6">
+                    <!-- Injected by JS -->
                 </div>
 
                 <!-- Correct Answers List -->
-                <div class="text-left bg-gray-50 rounded-xl border border-gray-200 p-4">
-                    <h3 class="font-bold text-gray-700 mb-3 border-b pb-2">बरोबर उत्तरे (Correct Answers):</h3>
-                    <ul id="answersList" class="space-y-3 text-sm">
+                <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                    <div class="bg-gray-100 px-4 py-2 border-b border-gray-200">
+                        <h3 class="font-bold text-gray-700 text-sm">स्पष्टीकरण व उत्तरे (Answer Key)</h3>
+                    </div>
+                    <ul id="answersList" class="divide-y divide-gray-100 max-h-60 overflow-y-auto p-2">
                         <!-- List injected by JS -->
                     </ul>
                 </div>
@@ -116,162 +128,154 @@
         // --- CONFIGURATION ---
         const APP_LINK = "https://play.google.com/store/search?q=Success+Digital+Classes"; 
         
-        // --- DATA: 20 Unique Questions (4 Subjects) ---
+        // --- DATA: Test 3 - 20 Unique Questions (4 Subjects) ---
         const questionsData = [
             // --- MARATHI (5 Questions) ---
             {
                 id: 1,
                 subject: "मराठी",
-                question: "१. 'अति तेथे माती' या म्हणीचा योग्य अर्थ कोणता?",
-                options: ["जास्त माती असणे", "कोणत्याही गोष्टीचा अतिरेक वाईट असतो", "मातीचे घर बांधणे", "कमी तिथे जास्त"],
-                correct: 1 // कोणत्याही गोष्टीचा अतिरेक वाईट असतो
+                question: "१. 'फुलांचा' काय असतो?",
+                options: ["ढिगारा", "गुच्छ", "जुडी", "थवा"],
+                correct: 1 // गुच्छ (Bouquet)
             },
             {
                 id: 2,
                 subject: "मराठी",
-                question: "२. 'वारा' या शब्दाचा समानार्थी शब्द निवडा.",
-                options: ["अनिल", "सुमन", "सलील", "पंकज"],
-                correct: 0 // अनिल
+                question: "२. 'कवि' या शब्दाचे स्त्रीलिंगी रूप ओळखा.",
+                options: ["कवित्री", "कवयित्री", "कविपत्न", "लेखिका"],
+                correct: 1 // कवयित्री (Grammatically correct spelling)
             },
             {
                 id: 3,
                 subject: "मराठी",
-                question: "३. विरुद्धार्थी शब्द ओळखा: 'प्रगती' x ___?",
-                options: ["उन्नती", "अधोगती", "गती", "सन्मती"],
-                correct: 1 // अधोगती
+                question: "३. 'तोंडात बोट घालणे' या वाक्प्रचाराचा अर्थ सांगा.",
+                options: ["बोट चावणे", "नवल वाटणे / आश्चर्य करणे", "घाबरणे", "राग येणे"],
+                correct: 1 // नवल वाटणे
             },
             {
                 id: 4,
                 subject: "मराठी",
-                question: "४. 'पायाखाली घालणे' या वाक्प्रचाराचा अर्थ काय?",
-                options: ["पाया पडणे", "तुडवणे / नाश करणे", "धावणे", "पायाला लागणे"],
-                correct: 1 // तुडवणे
+                question: "४. खालील वाक्यात कोणते विरामचिन्ह येईल? 'अरेरे तो पडला'",
+                options: ["पूर्णविराम (.)", "प्रश्नचिन्ह (?)", "उद्गारवाचक चिन्ह (!)", "स्वल्पविराम (,)"],
+                correct: 2 // अरेरे! (Exclamation)
             },
             {
                 id: 5,
                 subject: "मराठी",
-                question: "५. खालीलपैकी अशुद्ध शब्द कोणता?",
-                options: ["परीक्षा", "मंदीर", "सूर्य", "भूगोल"],
-                correct: 1 // मंदीर (Correct is मंदिर)
+                question: "५. समानार्थी शब्दाची चुकीची जोडी ओळखा.",
+                options: ["आई - माता", "झाड - तरू", "घर - सदन", "रात्र - दिवस"],
+                correct: 3 // रात्र - दिवस (हे विरुद्धार्थी आहेत)
             },
 
             // --- MATHEMATICS (5 Questions in Marathi) ---
             {
                 id: 6,
                 subject: "गणित",
-                question: "६. ४५,६७८ या संख्येतील ५ ची स्थानिक किंमत किती?",
-                options: ["५०", "५००", "५०००", "५०,०००"],
-                correct: 2 // ५०००
+                question: "६. आंतरराष्ट्रीय संख्याचिन्हात '२३,५०९' कसे लिहाल?",
+                options: ["23,509", "23,059", "23,590", "2,35,09"],
+                correct: 0 // 23,509
             },
             {
                 id: 7,
                 subject: "गणित",
-                question: "७. एका चौरसाची बाजू ६ सेमी आहे, तर त्याची परिमिती किती?",
-                options: ["२४ सेमी", "३६ सेमी", "१२ सेमी", "३० सेमी"],
-                correct: 0 // ६ x ४ = २४
+                question: "७. ९० अंशापेक्षा कमी माप असलेल्या कोनाला काय म्हणतात?",
+                options: ["काटकोन", "विशालकोन", "लघुकोन", "सरळकोन"],
+                correct: 2 // लघुकोन (Acute Angle)
             },
             {
                 id: 8,
                 subject: "गणित",
-                question: "८. रोमन संख्याचिन्हात '१९' ही संख्या कशी लिहाल?",
-                options: ["XIX", "XVIV", "IXX", "XVIIII"],
-                correct: 0 // XIX
+                question: "८. ५०० रुपयांच्या ३ नोटा आणि ५० रुपयांच्या ४ नोटा म्हणजे एकूण किती रुपये?",
+                options: ["१५००", "१७००", "१६००", "१५२०"],
+                correct: 1 // (500*3=1500) + (50*4=200) = 1700
             },
             {
                 id: 9,
                 subject: "गणित",
-                question: "९. पावणे पाच म्हणजे किती?",
-                options: ["४.१५", "४.४५", "५.४५", "५.१५"],
-                correct: 1 // ४.४५
+                question: "९. खालीलपैकी 'मूळ संख्या' कोणती आहे?",
+                options: ["९", "१५", "१७", "२१"],
+                correct: 2 // १७ (Prime Number)
             },
             {
                 id: 10,
                 subject: "गणित",
-                question: "१०. त्रिकोणाला एकूण किती बाजू असतात?",
-                options: ["४", "२", "३", "५"],
-                correct: 2 // ३
+                question: "१०. १ डझन केळी आणि अर्धा डझन आंबे मिळून एकूण किती फळे?",
+                options: ["१२", "१८", "२४", "१०"],
+                correct: 1 // 12 + 6 = 18
             },
 
             // --- ENGLISH (5 Questions) ---
             {
                 id: 11,
                 subject: "इंग्रजी",
-                question: "11. Find the rhyming word for 'Ball'.",
-                options: ["Bell", "Tell", "Tall", "Sell"],
-                correct: 2 // Tall
+                question: "11. Select the opposite of 'Cold'.",
+                options: ["Cool", "Ice", "Hot", "Freeze"],
+                correct: 2 // Hot
             },
             {
                 id: 12,
                 subject: "इंग्रजी",
-                question: "12. Which of the following is an Action Word (Verb)?",
-                options: ["Beautiful", "Run", "Slowly", "Table"],
-                correct: 1 // Run
+                question: "12. Identify the noun in the sentence: 'The cat runs fast.'",
+                options: ["Runs", "Fast", "The", "Cat"],
+                correct: 3 // Cat
             },
             {
                 id: 13,
                 subject: "इंग्रजी",
-                question: "13. Choose the correct preposition: The book is ___ the table.",
-                options: ["in", "on", "at", "to"],
-                correct: 1 // on
+                question: "13. Complete the motto: 'Save water, save ___.'",
+                options: ["Money", "Life", "Paper", "Time"],
+                correct: 1 // Life
             },
             {
                 id: 14,
                 subject: "इंग्रजी",
-                question: "14. What is the young one of a 'Dog' called?",
-                options: ["Kitten", "Calf", "Puppy", "Cub"],
-                correct: 2 // Puppy
+                question: "14. Which body part do we use to 'smell'?",
+                options: ["Eyes", "Ears", "Nose", "Skin"],
+                correct: 2 // Nose
             },
             {
                 id: 15,
                 subject: "इंग्रजी",
-                question: "15. Select the correct spelling.",
-                options: ["Teacher", "Techer", "Teecher", "Teachre"],
-                correct: 0 // Teacher
+                question: "15. Find the hidden word in 'Butterfly'.",
+                options: ["But", "Full", "Late", "Bat"],
+                correct: 0 // But (Also Fly) - Option 1 is clearest
             },
 
             // --- INTELLIGENCE (5 Questions in Marathi) ---
             {
                 id: 16,
                 subject: "बुद्धिमत्ता",
-                question: "१६. गटात न बसणारे पद ओळखा: (जानेवारी, मार्च, एप्रिल, मे)",
-                options: ["जानेवारी", "मार्च", "एप्रिल", "मे"],
-                correct: 2 // एप्रिल (३० दिवस, बाकी ३१)
+                question: "१६. संख्या मालिका पूर्ण करा: ४, ८, १२, १६, ?",
+                options: ["१८", "२०", "२४", "२२"],
+                correct: 1 // २० (Difference of 4)
             },
             {
                 id: 17,
                 subject: "बुद्धिमत्ता",
-                question: "१७. ३, ६, ९, १२, ? - प्रश्नचिन्हाच्या जागी कोणती संख्या येईल?",
-                options: ["१३", "१४", "१५", "१६"],
-                correct: 2 // १५ (३ चा पाढा)
+                question: "१७. गटात न बसणारा शब्द ओळखा: (आंबा, सफरचंद, बटाटा, केळी)",
+                options: ["आंबा", "सफरचंद", "बटाटा", "केळी"],
+                correct: 2 // बटाटा (भाजी/मुळ आहे, बाकी फळे आहेत)
             },
             {
                 id: 18,
                 subject: "बुद्धिमत्ता",
-                question: "१८. सहसंबंध ओळखा: मासा : पाणी :: पक्षी : ?",
-                options: ["हवा", "जमीन", "पाणी", "डोंगर"],
-                correct: 0 // हवा / आकाश (Meaning Sky/Air context)
+                question: "१८. सहसंबंध: शाळा : विद्यार्थी :: दवाखाना : ?",
+                options: ["शिक्षक", "रुग्ण", "शेतकरी", "पोलीस"],
+                correct: 1 // रुग्ण (Patient)
             },
             {
                 id: 19,
                 subject: "बुद्धिमत्ता",
-                question: "१९. 'बदक' या शब्दाचा पाण्यातील आरशात दिसणारा शब्द कसा असेल?",
-                options: ["क बद", "बदक", "कड़ब", "उलट प्रतिमा"],
-                correct: 1 // Text logic for web: In water 'बदक' mostly looks inverted but left-right same. Keeping simple logic option for UI. Actual water image is vertical inversion. Let's change to simple logic: A is to B as C is to D.
-                // REPLACING QUESTION FOR CLARITY IN HTML format
-            },
-            {
-                id: 19,
-                subject: "बुद्धिमत्ता",
-                question: "१९. सांकेतिक भाषेत BAD = 214, तर MAD = ?",
-                options: ["1314", "4131", "1234", "4321"],
-                correct: 0 // M=13, A=1, D=4
+                question: "१९. सांकेतिक भाषेत 'ABC' ला '123' लिहिले, तर 'E' ला काय लिहाल?",
+                options: ["4", "5", "6", "3"],
+                correct: 1 // 5 (Position in alphabet)
             },
             {
                 id: 20,
                 subject: "बुद्धिमत्ता",
-                question: "२०. दिशा ओळखा: सूर्य ज्या दिशेला उगवतो, त्याच्या विरुद्ध दिशा कोणती?",
-                options: ["उत्तर", "दक्षिण", "पूर्व", "पश्चिम"],
-                correct: 3 // पश्चिम
+                question: "२०. विसंगत आकृती (Odd figure) ओळखा. (तर्क: भूमितीय आकार)",
+                options: ["त्रिकोण", "चौरस", "वर्तुळ", "रेषा"],
+                correct: 3 // रेषा (बाकी सर्व बंद आकृत्या आहेत - Closed figures vs Line)
             }
         ];
 
@@ -280,9 +284,9 @@
 
         questionsData.forEach((q, index) => {
             const qDiv = document.createElement('div');
-            qDiv.className = "bg-white p-5 rounded-xl shadow-sm border border-gray-100 transition hover:shadow-md";
+            qDiv.className = "bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-green-200 transition-all duration-300";
             
-            // Subject Badge Color Logic
+            // Subject Badge
             let badgeClass = "bg-gray-100 text-gray-800";
             if(q.subject === "मराठी") badgeClass = "bg-orange-100 text-orange-800 border-orange-200";
             if(q.subject === "गणित") badgeClass = "bg-red-100 text-red-800 border-red-200";
@@ -295,21 +299,21 @@
                 optionsHtml += `
                     <div class="relative group">
                         <input type="radio" name="q${q.id}" id="q${q.id}_opt${optIndex}" value="${optIndex}" class="option-radio peer sr-only" required>
-                        <label for="q${q.id}_opt${optIndex}" class="block p-3.5 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer hover:bg-white transition-all font-medium text-gray-700 peer-checked:bg-green-50 peer-checked:text-green-800 peer-checked:border-green-500">
-                            <span class="inline-block w-6 h-6 rounded-full bg-white border border-gray-300 text-xs flex items-center justify-center mr-2 text-gray-500 peer-checked:bg-green-500 peer-checked:text-white peer-checked:border-transparent">${optIndex + 1}</span>
-                            ${opt}
+                        <label for="q${q.id}_opt${optIndex}" class="flex items-center p-4 bg-gray-50 border-2 border-transparent rounded-xl cursor-pointer hover:bg-green-50 transition-all font-medium text-gray-700 peer-checked:bg-green-50 peer-checked:text-green-900 peer-checked:border-green-500">
+                            <span class="w-8 h-8 flex-shrink-0 rounded-full bg-white border-2 border-gray-200 text-sm font-bold flex items-center justify-center mr-3 text-gray-500 peer-checked:bg-green-600 peer-checked:text-white peer-checked:border-transparent transition-colors shadow-sm">${optIndex + 1}</span>
+                            <span>${opt}</span>
                         </label>
                     </div>
                 `;
             });
 
             qDiv.innerHTML = `
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="text-xs font-bold px-3 py-1 rounded-full border ${badgeClass}">${q.subject}</span>
-                    <span class="text-xs text-gray-400 font-medium">Q${index + 1} of ${questionsData.length}</span>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs font-bold px-3 py-1 rounded-full border ${badgeClass} uppercase tracking-wider">${q.subject}</span>
+                    <span class="text-xs text-gray-400 font-bold bg-gray-100 px-2 py-1 rounded">Q${index + 1}</span>
                 </div>
-                <h3 class="text-lg font-bold text-gray-800 mb-5 leading-relaxed">${q.question}</h3>
-                <div class="grid grid-cols-1 gap-3">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 leading-relaxed">${q.question}</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     ${optionsHtml}
                 </div>
             `;
@@ -320,65 +324,58 @@
         document.getElementById('quizForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Stats Objects
+            // Stats
             let totalScore = 0;
             const subjectStats = {
-                "मराठी": { score: 0, total: 0 },
-                "गणित": { score: 0, total: 0 },
-                "इंग्रजी": { score: 0, total: 0 },
-                "बुद्धिमत्ता": { score: 0, total: 0 }
+                "मराठी": { score: 0, total: 0, color: "text-orange-600" },
+                "गणित": { score: 0, total: 0, color: "text-red-600" },
+                "इंग्रजी": { score: 0, total: 0, color: "text-blue-600" },
+                "बुद्धिमत्ता": { score: 0, total: 0, color: "text-purple-600" }
             };
 
             const formData = new FormData(this);
             const answersListEl = document.getElementById('answersList');
-            answersListEl.innerHTML = ""; // Clear previous
+            answersListEl.innerHTML = "";
 
             questionsData.forEach(q => {
                 const userVal = formData.get(`q${q.id}`);
                 const isCorrect = parseInt(userVal) === q.correct;
                 
-                // Update Subject Stats
-                subjectStats[q.subject].total += 2; // 2 marks per Q
-                
+                subjectStats[q.subject].total += 2;
                 if(isCorrect) {
                     totalScore += 2;
                     subjectStats[q.subject].score += 2;
                 }
 
-                // Build Answer Review Item
+                // Answer Key Item
                 const li = document.createElement('li');
-                li.className = `p-3 rounded-lg border ${isCorrect ? "bg-green-50 border-green-100" : "bg-red-50 border-red-100"}`;
+                li.className = "py-3 px-2 flex flex-col gap-1";
                 li.innerHTML = `
-                    <div class="flex flex-col gap-1">
-                        <div class="flex justify-between items-start">
-                            <span class="font-bold text-gray-700 text-sm w-11/12">${q.question}</span>
-                            <span class="text-lg">${isCorrect ? "✅" : "❌"}</span>
-                        </div>
-                        ${!isCorrect ? `<p class="text-xs text-red-600 font-semibold mt-1">बरोबर उत्तर: ${q.options[q.correct]}</p>` : ''}
+                    <div class="flex justify-between items-start text-sm">
+                        <span class="text-gray-800 font-medium w-3/4">${q.id}. ${q.question}</span>
+                        <span class="font-bold ${isCorrect ? 'text-green-600' : 'text-red-500'}">${isCorrect ? 'Right' : 'Wrong'}</span>
                     </div>
+                    ${!isCorrect ? `<div class="text-xs text-green-700 bg-green-50 p-2 rounded mt-1">✅ योग्य उत्तर: <strong>${q.options[q.correct]}</strong></div>` : ''}
                 `;
                 answersListEl.appendChild(li);
             });
 
-            // Update Total Score UI
+            // Update Score
             document.getElementById('scoreDisplay').innerText = totalScore;
             
-            // Update Subject Breakdown UI
+            // Breakdown UI
             const breakdownContainer = document.getElementById('subjectBreakdown');
             breakdownContainer.innerHTML = '';
             for (const [subject, stats] of Object.entries(subjectStats)) {
-                if(stats.total > 0) { // Only show subjects that had questions
+                if(stats.total > 0) {
                     const percent = Math.round((stats.score / stats.total) * 100);
-                    let color = "bg-gray-100 text-gray-800";
-                    if(percent >= 80) color = "bg-green-100 text-green-800";
-                    else if(percent >= 50) color = "bg-yellow-100 text-yellow-800";
-                    else color = "bg-red-100 text-red-800";
-
                     breakdownContainer.innerHTML += `
-                        <div class="flex flex-col p-3 rounded-lg bg-gray-50 border border-gray-100 text-center">
-                            <span class="text-xs text-gray-500 font-bold uppercase">${subject}</span>
-                            <span class="text-xl font-bold text-gray-800 my-1">${stats.score}/${stats.total}</span>
-                            <span class="text-xs px-2 py-0.5 rounded-full ${color} self-center">${percent}%</span>
+                        <div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+                            <span class="text-xs font-bold text-gray-400 uppercase">${subject}</span>
+                            <div class="text-xl font-black ${stats.color} my-1">${stats.score}<span class="text-gray-300 text-sm">/${stats.total}</span></div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                                <div class="bg-gray-800 h-1.5 rounded-full" style="width: ${percent}%"></div>
+                            </div>
                         </div>
                     `;
                 }
@@ -388,8 +385,8 @@
             const modal = document.getElementById('resultModal');
             modal.classList.remove('hidden');
 
-            // Countdown & Redirect
-            let timeLeft = 3;
+            // 30 Second Timer Logic
+            let timeLeft = 30;
             const timerEl = document.getElementById('timer');
             
             const countdown = setInterval(() => {
